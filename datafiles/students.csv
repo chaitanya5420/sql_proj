@@ -1,0 +1,51 @@
+first_name,last_name,dob,email,ph_number,reg_no,address,stud_class,stud_year
+James,Smith,01-02-1981,JamesSmith@gmail.com,9001102429,,"123 Main Street, Anytown","Math, English, Science",2019
+Christopher,Anderson,02-03-1981,ChristopherAnderson@gmail.com,9001102430,,"456 Elm Street, Newtown","History, Art, Biology",2022
+Ronald,Clark,03-04-1981,RonaldClark@gmail.com,9001102431,,"789 Oak Avenue, Rivertown","Chemistry, Literature, Physics",2020
+Mary,Wright,04-05-1981,MaryWright@gmail.com,9001102432,,"101 Pine Road, Hillside","Spanish, Geography, Music",2023
+Lisa,Mitchell,05-06-1981,LisaMitchell@gmail.com,9001102433,,"222 Maple Lane, Lakeside","Computer Science, Economics, PE",2021
+Michelle,Johnson,06-07-1981,MichelleJohnson@gmail.com,9001102434,,"333 Cedar Court, Mountainview","Psychology, Sociology, Algebra",2019
+John,Thomas,07-08-1981,JohnThomas@gmail.com,9001102435,,"444 Birch Street, Riverdale","French, Calculus, Drama",2022
+Daniel,Rodriguez,08-09-1981,DanielRodriguez@gmail.com,9001102436,,"555 Willow Way, Parkview","Statistics, Political Science, Gym",2020
+Anthony,Lopez,09-10-1981,AnthonyLopez@gmail.com,9001102437,,"666 Oakwood Drive, Hilltop","Environmental Science, Ethics, PE",2023
+Patricia,Perez,01-10-1975,PatriciaPerez@gmail.com,9001102438,,"777 Elmwood Avenue, Brookside","Astronomy, Health, Literature",2021
+Nancy,Williams,02-11-1975,NancyWilliams@hotmail.com,9001102439,,"888 Cedar Street, Pineville","Trigonometry, Government, Chemistry",2019
+Laura,Jackson,03-12-1975,LauraJackson@hotmail.com,9001102440,,"999 Maple Avenue, Lakeshore","World History, Art History, Biology",2022
+Robert,Lewis,4/13/1975,RobertLewis@hotmail.com,9001102441,,"111 Pinehurst Drive, Woodland","Film Studies, Linguistics, Geography",2020
+Paul,Hill,5/14/1975,PaulHill@hotmail.com,9001102442,,"222 Oakhill Road, Lakeview","Anthropology, Astronomy, PE",2023
+Kevin,Roberts,6/14/1975,KevinRoberts@hotmail.com,9001102443,,"333 Forest Lane, Hillcrest","Music Theory, Calculus, PE",2021
+Linda,Jones,7/16/1975,LindaJones@hotmail.com,9001102429,,"444 Meadow Drive, Springdale","Environmental Science, Psychology, Drama",2019
+Karen,White,8/17/1975,KarenWhite@hotmail.com,9001102430,,"555 Sunflower Court, Sunset","Microbiology, Economics, PE",2022
+Sarah,Lee,9/18/1975,SarahLee@hotmail.com,9001102431,,"666 Rosewood Lane, Riverbank","Philosophy, Statistics, Literature",2020
+Michael,Scott,10/19/1975,MichaelScott@hotmail.com,9001102432,,"777 Sycamore Street, Riverside","Geology, Anatomy, Computer Science",2023
+Mark,Turner,1/20/1991,MarkTurner@hotmail.com,9001102433,,"888 Magnolia Avenue, Hillside","Sociology, Political Science, Algebra",2021
+Jason,Brown,2/21/1991,JasonBrown@aol.com,9001102434,,"999 Oakwood Court, Meadowview","Photography, Literature, PE",2019
+Barbara,Harris,3/22/1991,BarbaraHarris@aol.com,9001102435,,"101 Pinehurst Road, Lakeside","Journalism, Creative Writing, Music",2022
+Betty,Walker,4/23/1991,BettyWalker@aol.com,9001102436,,"222 Elmwood Drive, Maplewood","Ethics, Physics, Statistics",2020
+Kimberly,Green,5/24/1991,KimberlyGreen@aol.com,9001102437,,"333 Birchwood Lane, Pinecrest","Chemistry, Algebra, Gym",2023
+William,Phillips,6/25/1991,WilliamPhillips@aol.com,9001102438,,"444 Willow Lane, Brookview","Geography, History, Drama",2021
+Donald,Davis,7/26/1991,DonaldDavis@aol.com,9001102439,,"555 Cedar Avenue, Hillcrest","Calculus, Psychology, PE",2019
+Jeff,Martin,8/27/1991,JeffMartin@aol.com,9001102440,,"666 Pineview Road, Oakdale","Astronomy, Environmental Science, Economics",2022
+Elizabeth,Hall,9/28/1991,ElizabethHall@aol.com,9001102441,,"777 Maplewood Avenue, Riverdale","Literature, Spanish, Gym",2020
+Helen,Adams,10/29/1991,HelenAdams@aol.com,9001102442,,"888 Oakhill Drive, Springview","Computer Science, History, Music",2023
+Deborah,Campbell,11/30/1991,DeborahCampbell@aol.com,9001102443,,"999 Elmwood Court, Lakeside","Statistics, Biology, PE",2021
+David,Miller,12/31/1991,DavidMiller@yahoo.com,9001102429,,"101 Birch Lane, Hillcrest","Chemistry, Sociology, Drama",2019
+George,Thompson,1/17/1968,GeorgeThompson@yahoo.com,9001102430,,"222 Sycamore Road, Pineview","Geography, Psychology, Literature",2022
+Jennifer,Allen,2/18/1968,JenniferAllen@yahoo.com,9001102431,,"333 Willow Drive, Riverbank","Physics, Art History, PE",2020
+Sandra,Baker,3/19/1968,SandraBaker@yahoo.com,9001102432,,"444 Oak Street, Meadowview","Mathematics, Philosophy, Drama",2023
+Richard,Parker,4/20/1968,RichardParker@yahoo.com,9001102433,,"555 Pinehurst Avenue, Maplewood","Economics, Anthropology, PE",2021
+Kenneth,Wilson,5/21/1968,KennethWilson@yahoo.com,9001102434,,"666 Maple Lane, Hillside","English, Chemistry, Music",2019
+Maria,Garcia,6/22/1968,MariaGarcia@yahoo.com,9001102435,,"777 Cedar Court, Brookview","Biology, Government, Drama",2022
+Donna,Young,7/23/1968,DonnaYoung@yahoo.com,9001102436,,"888 Birchwood Avenue, Hillcrest","Political Science, Sociology, PE",2020
+Charles,Gonzalez,8/24/1968,CharlesGonzalez@yahoo.com,9001102437,,"999 Elm Street, Riverside","Literature, History, Psychology",2023
+Steven,Evans,9/25/1968,StevenEvans@yahoo.com,9001102438,,"101 Oakwood Drive, Lakeshore","Astronomy, Geography, Music",2021
+Susan,Moore,10/26/1968,SusanMoore@yahoo.com,9001102439,,"222 Cedar Road, Sunset","Computer Science, Chemistry, PE",2019
+Carol,Martinez,11/27/1968,CarolMartinez@facebook.com,9001102440,,"333 Elmwood Lane, Riverdale","Mathematics, Economics, Drama",2022
+Joseph,Hernandez,12/28/1968,JosephHernandez@facebook.com,9001102441,,"444 Maple Avenue, Pinecrest","Biology, Sociology, PE",2020
+Edward,Nelson,1/29/1968,EdwardNelson@facebook.com,9001102442,,"555 Pine Road, Hilltop","Chemistry, Art, Literature",2023
+Margaret,Edwards,1/30/1968,MargaretEdwards@facebook.com,9001102443,,"666 Oak Lane, Springdale","Physics, Psychology, Music",2021
+Ruth,Taylor,1/31/1968,RuthTaylor@facebook.com,9001102429,,"777 Birch Street, Hillcrest","History, Philosophy, PE",2019
+Thomas,Robinson,02-01-1968,ThomasRobinson@facebook.com,9001102430,,"888 Elmwood Court, Brookside","Environmental Science, Literature, Drama",2022
+Brian,King,02-02-1968,BrianKing@facebook.com,9001102431,,"999 Cedar Drive, Hillcrest","Sociology, Statistics, PE",2020
+Dorothy,Carter,02-03-1968,DorothyCarter@facebook.com,9001102432,,"555 Pine Road, Hilltop","Computer Science, Chemistry, PE",2023
+Sharon,Collins,02-04-1968,SharonCollins@facebook.com,9001102433,,"777 Birch Street, Hillcrest","Chemistry, Art, Literature",2021
