@@ -1,1 +1,51 @@
-﻿
+﻿course_id,course_name,course_books,course_subject,course_year
+1,Mathematics,"Calculus, Algebra",Mathematics,2020
+2,English Literature,"To Kill a Mockingbird, Hamlet",English Literature,2021
+3,Biology,"Biology: Concepts and Investigations, Campbell Biology",Biology,2022
+4,Computer Science,"Introduction to Algorithms, Clean Code",Computer Science,2020
+5,History,"A People's History of the United States, Guns, Germs, and Steel",History,2022
+6,Chemistry,"Chemical Principles, Organic Chemistry",Chemistry,2023
+7,Art,"The Story of Art, Art Since 1900",Art,2021
+8,Physics,"Fundamentals of Physics, Six Easy Pieces",Physics,2020
+9,Economics,"Principles of Economics, Freakonomics",Economics,2021
+10,Psychology,"Psychology, Thinking, Fast and Slow",Psychology,2022
+11,Statistics,"Introduction to Statistical Learning, Naked Statistics",Statistics,2020
+12,Sociology,"Sociology, The Presentation of Self in Everyday Life",Sociology,2023
+13,Political Science,"The Federalist Papers, An Introduction to Political Philosophy",Political Science,2022
+14,Geography,"Geography: Realms, Regions, and Concepts, Prisoners of Geography",Geography,2021
+15,Philosophy,"Sophie's World, Meditations",Philosophy,2020
+16,Environmental Science,"Silent Spring, The Sixth Extinction",Environmental Science,2023
+17,Anthropology,"Cultural Anthropology, Guns, Germs, and Steel",Anthropology,2022
+18,Music,"How Music Works, Listen to This",Music,2021
+19,Health,"The Emperor of All Maladies, The Immortal Life of Henrietta Lacks",Health,2020
+20,Foreign Language,"Pimsleur Language Program, Assimil Language Courses",Foreign Language,2023
+21,Engineering,"Engineering Mechanics, Engineering Fundamentals",Engineering,2022
+22,Literature,"Crime and Punishment, The Great Gatsby",Literature,2021
+23,Film Studies,"Film Art, Understanding Movies",Film Studies,2020
+24,Business Administration,"The Lean Startup, Good to Great",Business Administration,2023
+25,Law,"To Kill a Mockingbird, The Rule of Law",Law,2022
+26,Communication,"Interpersonal Communication, Public Speaking",Communication,2021
+27,Journalism,"The Elements of Journalism, On Writing Well",Journalism,2020
+28,Design,"Don't Make Me Think, The Design of Everyday Things",Design,2023
+29,Education,"Teaching for Understanding, The Courage to Teach",Education,2022
+30,Marketing,"Influence, Made to Stick",Marketing,2021
+31,Nutrition,"The China Study, In Defense of Food",Nutrition,2020
+32,Physical Education,"Physical Education and Health, Fitness for Life",Physical Education,2023
+33,Drama,"Theater Experience, The Art of Dramatic Writing",Drama,2022
+34,Criminal Justice,"Just Mercy, The New Jim Crow",Criminal Justice,2021
+35,Architecture,"Architecture: Form, Space, and Order, A Global History of Architecture",Architecture,2020
+36,Mathematical Finance,"Options, Futures, and Other Derivatives, The Black Swan",Mathematical Finance,2023
+37,Astronomy,"Cosmos, Astrophysics for People in a Hurry",Astronomy,2022
+38,Healthcare Administration,"The Innovator's Prescription, Healthcare Delivery in the USA",Healthcare Administration,2021
+39,Public Health,"Introduction to Public Health, The Immortal Life of Henrietta Lacks",Public Health,2020
+40,Human Resources,"The HR Scorecard, Crucial Conversations",Human Resources,2023
+41,Religious Studies,"The Bible, The Qur'an",Religious Studies,2022
+42,Ethics,"The Nicomachean Ethics, Practical Ethics",Ethics,2021
+43,Fashion Design,"Fashion Design, Fashion Sketchbook",Fashion Design,2020
+44,Hospitality Management,"Introduction to Hospitality Management, Hotel Management and Operations",Hospitality Management,2023
+45,Culinary Arts,"On Cooking, The Professional Chef",Culinary Arts,2022
+46,Interior Design,"Interior Design, The Interior Design Reference and Specification Book",Interior Design,2021
+47,Information Technology,"Information Technology for Management, The Phoenix Project",Information Technology,2020
+48,Supply Chain Management,"Supply Chain Management, The Toyota Way",Supply Chain Management,2023
+49,Real Estate,"Real Estate Principles, The Millionaire Real Estate Investor",Real Estate,2022
+50,Social Work,"Social Work, The Body Keeps the Score",Social Work,2021

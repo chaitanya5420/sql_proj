@@ -1,17 +1,18 @@
 create schema college;
-
+use college;
 create table students
 (
 first_name VARCHAR(30),
 last_name VARCHAR(30),
 reg_no VARCHAR(10),
 dob		VARCHAR(15),
-ph_number	INTEGER,
+ph_number	INTEGER, 
 email	VARCHAR(30),
 address	VARCHAR(50),
 stud_class	VARCHAR(50),
 stud_year	INTEGER(5)
 );
+-- tablespace = 11950
 
 create table courses
 (
@@ -20,7 +21,10 @@ course_name varchar(50),
 course_books varchar(150),
 course_subject varchar(50),
 coures_year int
-);
+-- );
+
+
+-- tablespace = 12900
 
 CREATE TABLE library (
     book_id INT PRIMARY KEY,
@@ -34,6 +38,7 @@ CREATE TABLE library (
     book_count INT,
     book_year INT
 );
+-- tablespace = 29100 
 
 CREATE TABLE faculty (
     teacher_id INT PRIMARY KEY,
@@ -41,10 +46,11 @@ CREATE TABLE faculty (
     teacher_qualification VARCHAR(100),
     teacher_degrees VARCHAR(200),
     teacher_speciality VARCHAR(100),
-    teacher_certificate VARCHAR(100),
+    teacher_certificate VARCHAR(100), 
     teacher_class_issued VARCHAR(50),
     teacher_subjects VARCHAR(200),
     teacher_contact VARCHAR(20),
     teacher_email VARCHAR(100),
     teacher_post VARCHAR(100)
 );
+-- tablespace = 53700
