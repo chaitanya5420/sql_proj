@@ -23,7 +23,7 @@ with open(csv_file, 'r') as file:
         
         # Construct SQL INSERT statement with parameterized query
        
-        sql = "INSERT INTO courses(course_id, course_name, course_books, course_subject, coures_year) VALUES (%s, %s, %s, %s, %s)"
+        sql = "INSERT INTO courses(course_id, course_name, course_books, course_subject, course_year) VALUES (%s, %s, %s, %s, %s)"
         cursor.execute(sql, row)
 
 # Commit changes and close connections

@@ -1,0 +1,45 @@
+<!-- books.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    
+    <table >
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Subject</th>
+                <th>Class</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>Publisher</th>
+                <th>Issued To</th>
+                <th>Count</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+                <tr>
+                    <td>{{ book.book_id }}</td>
+                    <td>{{ book.book_name }}</td>
+                    <td>{{ book.book_subject }}</td>
+                    <td>{{ book.book_class }}</td>
+                    <td>{{ book.book_author }}</td>
+                    <td>{{ book.book_status }}</td>
+                    <td>{{ book.book_publisher }}</td>
+                    <td>{{ book.book_issued_to }}</td>
+                    <td>{{ book.book_count }}</td>
+                    <td>{{ book.book_year }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

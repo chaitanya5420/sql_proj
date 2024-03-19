@@ -1,0 +1,47 @@
+<!-- faculty.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty List</title>
+</head>
+<body>
+    <h1>Faculty List</h1>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Teacher ID</th>
+                    <th>Name</th>
+                    <th>Qualification</th>
+                    <th>Degrees</th>
+                    <th>Specialty</th>
+                    <th>Certificate</th>
+                    <th>Class Issued</th>
+                    <th>Subjects</th>
+                    <th>Contact</th>
+                    <th>Email</th>
+                    <th>Post</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for faculty_member in faculty %}
+                    <tr>
+                        <td>{{ faculty_member.teacher_id }}</td>
+                        <td>{{ faculty_member.teacher_name }}</td>
+                        <td>{{ faculty_member.teacher_qualification }}</td>
+                        <td>{{ faculty_member.teacher_degrees }}</td>
+                        <td>{{ faculty_member.teacher_speciality }}</td>
+                        <td>{{ faculty_member.teacher_certificate }}</td>
+                        <td>{{ faculty_member.teacher_class_issued }}</td>
+                        <td>{{ faculty_member.teacher_subjects }}</td>
+                        <td>{{ faculty_member.teacher_contact }}</td>
+                        <td>{{ faculty_member.teacher_email }}</td>
+                        <td>{{ faculty_member.teacher_post }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+</body>
+</html>
