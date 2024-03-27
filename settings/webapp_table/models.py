@@ -55,7 +55,7 @@ class course(models.Model):
     course_name = models.CharField(max_length=100)
     course_books = models.TextField()
     course_subject = models.CharField(max_length=100)
-    course_year = models.CharField(max_length=5)
+    course_year = models.IntegerField()
     
     class Meta:
         db_table = 'courses'
