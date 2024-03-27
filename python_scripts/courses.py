@@ -19,10 +19,8 @@ with open(csv_file, 'r') as file:
    
     data = csv.reader(file)
     next(data)                   # Skip header row
-    for row in data:
-        
-        # Construct SQL INSERT statement with parameterized query
-       
+    for row in data:  
+              
         sql = "INSERT INTO courses(course_id, course_name, course_books, course_subject, course_year) VALUES (%s, %s, %s, %s, %s)"
         cursor.execute(sql, row)
 

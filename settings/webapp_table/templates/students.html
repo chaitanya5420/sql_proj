@@ -3,10 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- {% load static %}
+    <link rel="stylesheet" href="{% static 'css/student.css' %}"> -->
     <title>Student List</title>
 </head>
 <body>
     <h1>Student List</h1>
+    <hr>
     <table>
         <thead>
             <tr>
@@ -21,6 +24,7 @@
                 <th>Year</th>
             </tr>
         </thead>
+       
         <tbody>
             {% for student in students %}
             <tr>
