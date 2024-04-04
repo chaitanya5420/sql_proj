@@ -4,16 +4,20 @@ from .models import *
 from django.shortcuts import render, redirect
 from .forms import *
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required      # it restrict some pages access ,to access these pages user have to login
+
 
 
 def home(request):
     return render(request, 'home.html')
 
+@login_required(login_url=('login'))   
 def students(request):
     students = Student.objects.all()
     return render(request, 'students.html', {'students': students})
 
+@login_required(login_url=('login'))   
 def faculty(request):
     faculty = faculties.objects.all()  # Retrieve all faculty members
     return render(request, 'faculty.html', {'faculty': faculty})
@@ -45,6 +49,11 @@ def custom_login(request):
         form = LoginForm()
     return render(request, 'login.html', {'form': form})
 
+def logoutuser(request):
+    
+    logout(request)
+    return redirect('home')
+
 
 def  register(request):
     page='register'
@@ -66,5 +75,5 @@ def  register(request):
             return redirect('login')  # Redirect to login page after successful registration
     else:
         form = RegistrationForm()
-        context = {'form': form, 'page':page}
+    context = {'form': form, 'page':page}
     return render(request, 'register.html', context)

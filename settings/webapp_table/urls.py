@@ -10,4 +10,6 @@ urlpatterns = [
     path('courses/', course_item, name = 'courses'),
     path('registration/', register, name = 'register'),
     path('login/', custom_login, name='login'),
+    path("logout/",logoutuser , name="logout"),
+
 ]

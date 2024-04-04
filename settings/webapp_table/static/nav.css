@@ -1,0 +1,10 @@
+.navbar.navbar-expand-lg.bg-body-tertiary{
+    background-color: #364958 !important;
+}
+.container-fluid a{
+    color: white !important; 
+}
+.btn.btn-outline-success{
+    color: white;
+    border: 1px solid white;
+}
