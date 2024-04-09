@@ -13,31 +13,44 @@
 <body>
     
     <div class="container">
-    <div class="card">
-        <div class="card-body">
-          <div class="image">
-          <!-- <img src="{% static 'images/student.png' %}" alt="Student Image"> -->
-          </div>
-            <li><a href="{% url 'students' %}">Students</a></li>
-        </div>
-      </div>
+      
       <div class="card">
         <div class="card-body">
+          <div class="ok">
+            <a href="{% url 'students' %}">
+              <img src="{% static 'images/student.png' %}" alt="Student Image">
+            </a>
+          </div>
+              <li><button><a href="{% url 'students' %}">Students</a></button></li>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="ok">
+            <a href="{% url 'faculty' %}">
+              <img src="{% static 'images/faculty.png' %}" alt="Student Image">
+            </a>
+          </div>
             <li><a href="{% url 'faculty' %}">Faculty</a></li>
         </div>
       </div>
+
       <div class="card">
         <div class="card-body">
             <li><a href="{% url 'books' %}">Books</a></li>
         </div>
       </div>
+
       <div class="card">
         <div class="card-body">
             <li><a href="{% url 'courses' %}">Courses</a></li>
         </div>
       </div>
+
     </div>
         
+    
    
 
     
