@@ -13,7 +13,6 @@
 <body>
     
     <div class="container">
-      
       <div class="card">
         <div class="card-body">
           <div class="ok">
@@ -21,30 +20,48 @@
               <img src="{% static 'images/student.png' %}" alt="Student Image">
             </a>
           </div>
-              <li><button><a href="{% url 'students' %}">Students</a></button></li>
+              <li><button style="margin-top: 5px; border-radius: 7px; height:30px; width:80px" ><a href="{% url 'students' %}">Students</a></button></li>
         </div>
       </div>
+
 
       <div class="card">
         <div class="card-body">
           <div class="ok">
             <a href="{% url 'faculty' %}">
-              <img src="{% static 'images/faculty.png' %}" alt="Student Image">
+              <img style="height: 250px;" src="{% static 'images/faculty2.png' %}" alt="faculty Image">
             </a>
           </div>
-            <li><a href="{% url 'faculty' %}">Faculty</a></li>
+          
+            <li>
+              <button class="second-card-button" style="margin-top: 13px; border-radius: 7px; height:30px; width:80px">
+                <a href="{% url 'faculty' %}">Faculty</a>
+              </button>
+            </li>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-body">
-            <li><a href="{% url 'books' %}">Books</a></li>
-        </div>
-      </div>
 
       <div class="card">
         <div class="card-body">
-            <li><a href="{% url 'courses' %}">Courses</a></li>
+          <div class="ok">
+            <a href="{% url 'faculty' %}">
+              <img  src="{% static 'images/books.png' %}" alt="faculty Image">
+            </a>
+          </div>
+            <li><button style="margin-top: 38px; border-radius: 7px; height:30px; width:80px"><a href="{% url 'books' %}">Books</a></button></li>
+        </div>
+      </div>
+
+      
+      <div class="card">
+        <div class="card-body">
+          <div class="ok">
+            <a href="{% url 'faculty' %}">
+              <img  src="{% static 'images/course.png' %}" alt="faculty Image">
+            </a>
+          </div>
+            <li><button style="margin-top: 0px; border-radius: 7px; height:30px; width:80px"><a href="{% url 'courses' %}">Courses</a></button></li>
         </div>
       </div>
 

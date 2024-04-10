@@ -1,6 +1,5 @@
 body{
-    background-color: #E5FCFF !important;
-
+    background-color: #006c76 !important;
 }
 
 
@@ -36,18 +35,7 @@ body{
 }
 
 
-/* 
-.ok{
-    padding: 0%;
-    margin: 0%;
-    width: 300px; 
-    height: 200px;
-    background-image: url('images/student.png'); 
-    background-size: cover; 
-    background-position: center; 
-    
-    
-}  */
+
 .ok {
     width: 100%; /* Adjust width as needed */
     height: auto; /* Adjust height as needed */
