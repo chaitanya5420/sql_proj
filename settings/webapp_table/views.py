@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect
 from .forms import *
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.decorators import login_required      # it restrict some pages access ,to access these pages user have to login
+from django.contrib.auth.decorators import login_required     
 
 
 
@@ -77,3 +77,6 @@ def  register(request):
         form = RegistrationForm()
     context = {'form': form, 'page':page}
     return render(request, 'register.html', context)
+
+
+

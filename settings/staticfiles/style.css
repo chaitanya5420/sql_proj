@@ -1,0 +1,14 @@
+h1{
+    background-color: #000000eb;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.table-dark{
+    margin: 0;
+
+}
+
+.card {
+    border: 2px solid black;
+}

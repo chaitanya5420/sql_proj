@@ -1,5 +1,7 @@
 # models.py
 from django.db import models
+from django.contrib.contenttypes.models import ContentType
+from django.contrib.contenttypes.fields import GenericForeignKey
 
 class Student(models.Model):
     first_name = models.CharField(max_length=30)
@@ -61,3 +63,5 @@ class course(models.Model):
         db_table = 'courses'
         
         
+
+

@@ -21,7 +21,7 @@ course_name varchar(50),
 course_books varchar(150),
 course_subject varchar(50),
 coures_year int
--- );
+);
 
 
 -- tablespace = 12900

@@ -1,0 +1,13 @@
+/* body{
+    background-color:rgb(59, 130, 185);
+} */
+
+.card {
+    height: 350px;
+    box-shadow: 10px 10px 5px;
+  }
+
+a{
+color: white;
+}
+
