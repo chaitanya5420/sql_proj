@@ -36,7 +36,7 @@
                   <img class="card-img-top" src="{% static 'images/student.png' %}" alt="Student Image">
                 </a>
               </div>
-              <button class="btn btn-dark btn-block btn-sm style="margin-top: 5px; border-radius: 7px; height:30px; width:80px">
+              <button class="btn btn-dark btn-block btn-sm" style="margin-top: 5px; border-radius: 7px; height:30px; width:80px">
                 <a href="{% url 'students' %}">Students</a>
               </button>
             </div>
@@ -62,7 +62,7 @@
           <div class="card">
             <div class="card-body">
               <div class="ok">
-                <a href="{% url 'faculty' %}">
+                <a href="{% url 'books' %}">
                   <img class="card-img-top" src="{% static 'images/books.png' %}" alt="Faculty Image">
 
                 </a>
@@ -78,11 +78,11 @@
           <div class="card">
             <div class="card-body">
               <div class="ok">
-                <a href="{% url 'faculty' %}">
+                <a href="{% url 'courses' %}">
                   <img class="card-img-top" src="{% static 'images/course.png' %}" alt="Faculty Image">
                 </a>
               </div>
-              <button class="btn btn-dark btn-block btn-sm style="margin-top: 5px; border-radius: 7px; height:30px; width:80px">
+              <button class="btn btn-dark btn-block btn-sm" style="margin-top: 5px; border-radius: 7px; height:30px; width:80px">
                 <a href="{% url 'courses' %}">course</a>
               </button>
             </div>
@@ -101,7 +101,13 @@
    <button class="btn btn-dark btn-block btn-sm" style="color :rgb(255, 255, 255);" >
           <a href="{% url 'gallary' %}">image upload</a>
         </button>
-      </li>
+      
+      </div>
+      <button class="btn btn-dark btn-block btn-sm" style="color :rgb(255, 255, 255);" >
+             <a href="{% url 'view' %}">file upload</a>
+           </button>
+         </li>
+      
     
     
 

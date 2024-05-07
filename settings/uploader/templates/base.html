@@ -1,14 +1,22 @@
+{% include 'nav.html' %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View Uploaded Files</title>
 </head>
 <body>
+    
 
-    <a href="{% url 'gallary' %}">gallary</a>
-    
-    
+    <a href="{% url 'file_upload' %}">add</a>
+    <h2>Files</h2>
+    <ul>
+        {% for file in files %}
+        <li>{{ file.file.name }}</li>
+        {% endfor %}
+    </ul>
+
 </body>
 </html>

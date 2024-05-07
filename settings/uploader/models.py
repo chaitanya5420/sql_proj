@@ -19,3 +19,7 @@ class Photo(models.Model):
     
     def __str__(self):
         return self.description
+
+class UploadedFile(models.Model):
+    file = models.FileField(upload_to='uploads/')
+    

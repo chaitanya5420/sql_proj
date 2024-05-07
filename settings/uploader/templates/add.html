@@ -12,7 +12,6 @@
     <div class="container ">
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <a class="btn btn-dark my-1" href="{% url 'gallary' %}">return</a>
 
                     <div class="card">
                         <form method="POST" action="" enctype="multipart/form-data">
@@ -41,10 +40,11 @@
 
                             <div class="form-group m-3">
                               <label >upload image</label>
-                              <input required name="image" type="file" class="form-control-file">
-
+                              <input required  name="image" type="file" class="form-control-file">
                             </div>
                             <button type="submit" class="btn btn-dark m-3 ">submit</button>
+                            <a class="btn btn-dark my-1" href="{% url 'gallary' %}">return</a>
+
                           </form>
 
                         
