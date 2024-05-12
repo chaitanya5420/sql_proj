@@ -21,5 +21,8 @@ class Photo(models.Model):
         return self.description
 
 class UploadedFile(models.Model):
+    name = models.CharField(max_length=255,null=True,blank=True)
     file = models.FileField(upload_to='uploads/')
     
+    # def __str__(self):
+    #     return self.name

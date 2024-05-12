@@ -12,25 +12,31 @@
     <title>Document</title>
 </head>
 <body>
-<div class="m-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col">
-                      
-                <a class="btn btn-dark my-1" href="{% url 'gallary' %}">return</a>
-                <div style="height:90vh;">
-
-                     <img style="max-width: 100%; max-height: 100%;" src='{{photos.image.url}}' alt='error'>
-                     
+    <div class="m-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">                    
+                    <div class="card" style="border:10px solid black; border-radius:3%;">
+                        <img class="card-img-top" src="{{ photos.image.url }}" alt="error">
+                        <div class="card-body" stayle="padding:3%;">
+                            <h5 class="card-title">
+                                <span class="border-bottom border-dark pb-1">Category:</span> {{ photos.category.name }}
+                            </h5>
+                            <p class="card-text border border-dark p-2">Description: {{ photos.description }}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a class="btn btn-dark" href="{% url 'gallary' %}">Return</a>
+                                <form action="{% url 'delete_photo' pk=photos.id %}" method="post">
+                                    {% csrf_token %}
+                                    <button class="btn btn-danger" type="submit">Delete Photo</button>
+                                </form>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <h3>category:{{photos.category.name}}</h3>
-                    <h6>description:{{photos.description}}</h6> 
-
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-
+    
 </body>
 </html>

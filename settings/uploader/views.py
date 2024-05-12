@@ -44,13 +44,22 @@ def add(request):
     return render(request, 'add.html',context)
 
 
-
 def photo(request, pk):
     photos = Photo.objects.get(id=pk)
     categories = Category.objects.all()
     context = {'categories':categories,'photos':photos}
     return render(request, 'view.html',context)
 
+def delete_photo(request, pk):
+    photos = Photo.objects.get(id=pk)
+    if request.method == 'POST':
+        photos.delete()
+        return redirect('gallary')  # Redirect to some other page after deletion
+    return redirect('photo', pk=pk)  # Redirect back to the view page if not a POST request
+
+
+def base(request):
+    return render(request,'base.html')
 
 
 def upload_file(request):
@@ -63,22 +72,20 @@ def upload_file(request):
         form = FileUploadForm()
     return render(request, 'file.html', {'form': form})
 
-def base(request):
-    return render(request,'base.html')
-
 
 def view_files(request):
     files = UploadedFile.objects.all()
-    file_tables = []
-    
-    for file_obj in files:
-       
-        try:
-            df = pd.read_csv(file_obj.file)
-            tables = df.columns.tolist()
-            file_tables.append({'file_name': file_obj.file.name, 'tables': tables})
-        except pd.errors.ParserError:
-            # Handle the case where file is not a CSV or cannot be parsed
-            pass
-            
-    return render(request, 'table.html', {'file_tables': file_tables})
+    return render(request, 'base.html', {'files': files})
+
+
+def show_tables(request, file_id):
+    file_obj = UploadedFile.objects.get(id=file_id)
+    try:
+        df = pd.read_csv(file_obj.file)
+        tables = df.values.tolist() 
+        headings = df.columns.tolist()
+        context = {'file_name': file_obj.name, 'tables': tables,'headings':headings}
+        return render(request, 'table.html',context )
+    except pd.errors.ParserError:
+        error_message = "Error: The selected file is not a valid CSV file."
+        return render(request, 'base.html', {'error_message': error_message})

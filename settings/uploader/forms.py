@@ -9,4 +9,4 @@ class add(forms.Form):
 class FileUploadForm(forms.ModelForm):
     class Meta:
         model = UploadedFile
-        fields = ['file']
+        fields = ['name','file']
