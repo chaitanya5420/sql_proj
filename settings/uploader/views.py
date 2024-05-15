@@ -70,7 +70,7 @@ def upload_file(request):
             return redirect('view')
     else:
         form = FileUploadForm()
-    return render(request, 'file.html', {'form': form})
+    return render(request, 'file.html', {'form': form,})
 
 
 def view_files(request):
