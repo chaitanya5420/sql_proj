@@ -75,7 +75,8 @@ def upload_file(request):
     else:
         form = FileUploadForm()
         files = UploadedFile.objects.all()
-    return render(request, 'base.html', {'form': form,'files':files})
+        context={'form':form,'files':files}
+    return render(request, 'base.html', context)
 
 
 # def view_files(request):

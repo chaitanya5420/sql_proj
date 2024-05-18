@@ -56,7 +56,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h2 class="card-title-light pb-">LOGIN</h2> 
+                        <h2 class="card-title-light pb-1">LOGIN</h2> 
                     </div>
                     <form class='form-group m-3 ' method="post">
                         {% csrf_token %}
@@ -67,7 +67,7 @@
                         </div>
                         
                         <div class="mb-3">
-                            <label for="id_name" class="form-label">PASSWORD</label>
+                            <label for="password" class="form-label">PASSWORD</label>
                             {{ form.password}}
                         </div>
                         

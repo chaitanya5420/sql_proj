@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Uploaded Files</title>
 <style>
+    
     .custom-link {
         display: block;
         position: relative;
@@ -26,43 +27,77 @@
         position: relative;
         z-index: 1;
     }
-   
-    .start{
-        color: #22223B;
+
+    h2{
+        border-bottom: 1px solid  rgba(243, 13, 13, 0.897);
+        color:rgba(255, 255, 255, 0.904) ;
+        text-align: center;
     }
-    
-    
+    .card{
+        background-color: #121118e4;
+        box-shadow: 0px 3px 30px;
+    }
+    input{
+        position: relative;
+        border-radius: 10px ;
+        border: 1px solid  rgba(63, 63, 63, 0.897);
+        background-color: white !important;
+        margin-top: 3%;
+        width: 100%;
+        padding-bottom: 9px ;
+        display:block;
+        padding:3% ;
+        background-color: #121118e4;
+
+    }
+    .btn{
+      
+        background-color: rgba(243, 13, 13, 0.897);
+        color: rgb(249, 249, 249);
+        
+    }
+    label{
+        color:white;
+    }      
+    .link-style{
+        color:red;
+    }
+    .btn.btn-dark{
+        background-color: #000000;
+    }
 </style>
 
 </head>
 <body>
    
-    <div class="upper-row">
-        <div class="col d-flex justify-content-center">
-            <a style="width:7%" class="btn btn-dark btn-block btn-sm m-1" href="{% url 'file_upload' %}">ADD</a>
-            <a style="width:7%" class="btn btn-dark btn-block btn-sm m-1" href="{% url 'home' %}">HOME</a>
-
-        </div>
-        
-    </div>
-    <div class="container mt-4">
+    
+    <div class="container m-5">
         <div class="row">
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title text-center mb-4">REGISTER</h2>
-                        <form method="post" enctype="multipart/form-data">
+                        <h2 class="card-title-light text-center mb-4 ">upload</h2>
+                        
+                        <form class='form-group m-3 ' method="post" enctype="multipart/form-data">
                             {% csrf_token %}
                             <div class="mb-3">
                                 <label for="id_name" class="form-label">File Name</label>
-                                {{ form.name }}
+                                <div class="form-group ">
+                                    {{ form.name }}
+    
+                                </div>
                             </div>
+                            
                             <div class="mb-3">
                                 <label for="id_file" class="form-label">Select File</label>
-                                {{ form.file }}
+                                <div class="form-group">
+                                    {{ form.file }}
+    
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <button class="btn btn-primary w-100" type="submit">Upload</button>
+                            
+                            <div class="card-body text-center">
+                                <button class=" btn btn-block w-100 " type="submit">Upload</button>
                             </div>
                         </form>
                     </div>
@@ -73,7 +108,7 @@
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     {% for file in files %}
                     <div class="col">
-                        <div class="card">
+                        <div style="background-color: #cecece;" class="card">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <a class="custom-link" href="{% url 'show_tables' file_id=file.id %}">

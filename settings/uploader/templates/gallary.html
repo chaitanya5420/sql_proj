@@ -12,6 +12,7 @@
     <link rel="stylesheet"  href="{% static 'gallary.css' %}">
 
 <style>
+    
 .image-thumbnail{
     height:200px;
     object-fit: cover;
@@ -23,13 +24,10 @@
 <div class="m-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div  class="col-md-3">
                 <div class="card" style="width: 18rem;">
-                    <div class="card-header d-flex justify-content-between align-items-center">
+                    <div class="card-header d-flex justify-content-center align-items-center">
                         CATEGORIES
-
-                        <a style="border-radius:50%" class="btn btn-secondary" href="{% url 'home' %}">HOME</a>
-
                     </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><a href="{% url 'gallary' %}">all</a></li>
@@ -37,7 +35,7 @@
                             <li class="list-group-item"><a href="{% url 'gallary' %}?category={{category.name}}">{{category.name}}</a></li>
                             {% endfor %}
                         </ul>
-                            <a class="btn btn-dark btn-block btn-sm m-1" href="{% url 'add' %}">add</a>
+                            <a class="btn btn-dark btn-block btn-sm m-1" href="{% url 'add' %}">ADD</a>
                         
                 </div>
             </div>
