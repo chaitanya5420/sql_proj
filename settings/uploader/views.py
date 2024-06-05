@@ -66,23 +66,21 @@ def base(request):
     return render(request,'base.html',context)
 
 
+
 def upload_file(request):
+    print("Inside upload_file view")
     if request.method == 'POST':
         form = FileUploadForm(request.POST, request.FILES)
         if form.is_valid():
+            print("Form is valid")
             form.save()
-            return redirect('base')
+            return redirect('base')  # Ensure 'base' is a valid view name or URL pattern
+        else:
+            print("Form is not valid:", form.errors)
     else:
         form = FileUploadForm()
-        files = UploadedFile.objects.all()
-        context={'form':form,'files':files}
-    return render(request, 'base.html', context)
-
-
-# def view_files(request):
-#     files = UploadedFile.objects.all()
-#     return render(request, 'base.html', {'files': files})
-
+    files = UploadedFile.objects.all()
+    return render(request, 'addfile.html', {'form': form, 'files': files})
 
 def show_tables(request, file_id):
     file_obj = UploadedFile.objects.get(id=file_id)
@@ -90,6 +88,7 @@ def show_tables(request, file_id):
         df = pd.read_csv(file_obj.file)
         tables = df.values.tolist()  # it converts each row of datafram into a list of lists means every index value has a list as it's value
         headings = df.columns.tolist()
+        
         context = {'file_name': file_obj.name, 'tables': tables,'headings':headings}
         return render(request, 'table.html',context )
     except pd.errors.ParserError:
